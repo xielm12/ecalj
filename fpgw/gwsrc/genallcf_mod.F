@@ -41,7 +41,7 @@
       implicit none
       character(120),protected:: symgrp
       character(6),allocatable,protected :: clabl(:)
-      integer,allocatable,protected:: iclass(:),
+      integer,allocatable:: iclass(:),
      &    nindxv(:,:),nindxc(:,:),ncwf(:,:,:) ,
      o    invg(:), il(:,:), in(:,:), im(:,:),   ilnm(:),  nlnm(:),
      o    ilv(:),inv(:),imv(:),  ilnmv(:), nlnmv(:),
@@ -50,7 +50,7 @@
      &    occv(:,:,:),unoccv(:,:,:)   
      &   ,occc(:,:,:),unoccc(:,:,:),
      o    nocc(:,:,:),nunocc(:,:,:),   iantiferro(:)
-      integer,protected::
+      integer::
      o  nclass,natom,nspin,nl,nn,nnv,nnc, ngrp,
      o  nlmto,nlnx,nlnxv,nlnxc,nlnmx,nlnmxv,nlnmxc, nctot!,nw
       real(8), allocatable,protected:: 
